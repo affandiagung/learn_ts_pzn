@@ -34,4 +34,15 @@ describe("Loop Statement", () => {
       counter++;
     } while (counter < 10);
   });
+
+  it("should support break and continue in typescript", function () {
+    let counter: number = 0;
+
+    do {
+      counter++;
+
+      if (counter === 10) break;
+      if (counter % 2 == 0) console.log(counter);
+    } while (true);
+  });
 });
